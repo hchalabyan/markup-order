@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Test For HTML</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header__logo">
+            <a href="#"><img alt="logo" src="assets/logo.svg"></a>
+        </div>
+        <nav class="menu">
+            <ul class="menu__desktop">
+                <li><a class="menu__item menu__item--active" href="#">Бизнес</a></li>
+                <li><a class="menu__item" href="#">О нас</a></li>
+                <li><a class="menu__item" href="#">Цены</a></li>
+                <li><a class="menu__item" href="#">Оформить заказ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="background-image">
+    <div class="background-content">
+        <h1 class="background-content__title">
+            <span>Lorem ipsum </span> dolor sit amet consectetur <span>adipiscing</span>
+        </h1>
+        <p class="background-content__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="background-content__list">
+            <li>Totam rem aperiam eaque ipsa</li>
+            <li>Sit voluptatem accusantium doloremque laudantium</li>
+            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+        <div class="background-content__btn-group">
+            <button class="background-content__button background-content__button--active">заказать</button>
+            <button class="background-content__button">подробнее</button>
+        </div>
+    </div>
+</section>
+<main class="order">
+    <div class="order__content">
+        <h2>Оформление <span>Заказа</span></h2>
+        <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        <div class="order__process">
+            <figure>
+                <div class="circle-icon">
+                    <img alt="search" src="assets/icons/searchIcon.svg">
+                </div>
+                <figcaption>Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+            <figure>
+                <div class="circle-icon">
+                    <img alt="search" src="assets/icons/percentIcon.svg">
+                </div>
+                <figcaption>Сonsecteturadipiscing elit</figcaption>
+            </figure>
+            <figure>
+                <div class="circle-icon">
+                    <img alt="search" src="assets/icons/fileIcon.svg">
+                </div>
+                <figcaption>Sed do eiusmod tempor</figcaption>
+            </figure>
+            <figure>
+                <div class="circle-icon">
+                    <img alt="search" src="assets/icons/mailIcon.svg">
+                </div>
+                <figcaption>Esse cillum dolore
+                    eu fugiat
+                </figcaption>
+            </figure>
+            <figure>
+                <div class="circle-icon">
+                    <img alt="search" src="assets/icons/moneyIcon.svg">
+                </div>
+                <figcaption>Excepteur sint occaecat cupidatat non proident</figcaption>
+            </figure>
+        </div>
+        <form class="order__form">
+            <div class="order__form__grid">
+                <div class="order__form__select">
+                    <select>
+                        <option disabled selected>Выберите тип системы</option>
+                        <option name="select1" >Sed ut perspiciatis</option>
+                        <option name="select2"> Nemo enim ipsam</option>
+                        <option name="select3">Sed ut perspiciatis</option>
+                        <option name="select4"> Temporibus autem</option>
+                        <option name="select5"> Itaque earum rerum</option>
+                    </select>
+                </div>
+                <input name="email" type="email" placeholder="Ваш e-mail">
+                <input name="name" type="text" placeholder="Ваше имя    ">
+                <div class="order__form__range">
+                    <label for="perc">Sed ut perspiciatis, unde omnis iste natus <span>75%</span></label>
+                    <input id="perc" max="100%" min="0" name="range" type="range">
+                </div>
+                <div class="order__form__file">
+                    <input name="file" type="file">
+                    <span>Прикрепить файл</span>
+                </div>
+            </div>
+            <button type="submit" class="order__form__btn">Отправить</button>
+        </form>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="footer__content">
+        <p class="footer__copy-right">
+            © 2018 «LoremIpsum.net» Все права защищены.
+        </p>
+        <div class="footer__menu">
+           <div class="footer__menu__items">
+               <img src="assets/icons/qiwiWalletIcon.svg" alt="qiwiWalletIcon">
+               <p>Qiwi wallet</p>
+           </div>
+            <div class="footer__menu__items">
+                <img src="assets/icons/yandexMoneyIcon.svg" alt="yandexMoneyIcon">
+                <p>Yandex Money</p>
+            </div>
+            <div class="footer__menu__items">
+                <img src="assets/icons/webMoneyIcon.svg" alt="webMoneyIcon">
+                <p>Web Money</p>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <a href="mailto:info@ipsum228.com" >
+                <img src="assets/icons/footerMailIcon.svg" alt="mailIcon">
+                <span>info@ipsum228.com</span>
+            </a>
+            <a href="mailto:vk.com" >
+                <img src="assets/icons/vkIcon.svg" alt="vkIcon">
+                <span>Мы вконтакте</span>
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="toggle-menu" id="toggle-menu">
+    <input id="menu" type="checkbox">
+    <label class="toggle-menu__icon" for="menu">
+        <div class="menu"></div>
+    </label>
+    <div class="toggle-menu__backdrop"></div>
+    <nav>
+        <ul class="toggle-menu__content">
+            <li><a class="menu__item menu__item--active" href="/">Бизнес</a></li>
+            <li><a class="menu__item" href="/">О нас</a></li>
+            <li><a class="menu__item" href="/">Цены</a></li>
+            <li><a class="menu__item" href="/">Оформить заказ</a></li>
+        </ul>
+    </nav>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
